@@ -1,15 +1,20 @@
 package hiber.model;
 
+import org.hibernate.annotations.GeneratorType;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "Cars")
-public class Car {
+public class Car{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -27,14 +32,6 @@ public class Car {
     public Car(String model, int series) {
         this.model = model;
         this.series = series;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getModel() {
@@ -55,9 +52,9 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car{" +
-                "model='" + model + '\'' +
-                ", series=" + series +
+        return "Car = {" +
+                "model = '" + model + '\'' +
+                ", series = " + series +
                 '}';
     }
 }

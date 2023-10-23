@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71c20402-abe6-494a-bddc-cce6ce4b3a7d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/ec5b4cd9-683b-47cd-bc48-d84b9d4da36e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ec5b4cd9-683b-47cd-bc48-d84b9d4da36e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/ec5b4cd9-683b-47cd-bc48-d84b9d4da36e/storage_v2/_src_/schema/spring_hiber.PKsLxQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ec5b4cd9-683b-47cd-bc48-d84b9d4da36e/storage_v2/_src_/schema/spring_hiber.PKsLxQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -13,13 +12,13 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/hiber/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hiber/config/AppConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hiber/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hiber/dao/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hiber/dao/UserDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hiber/dao/UserDaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hiber/model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hiber/model/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hiber/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hiber/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hiber/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hiber/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hiber/service/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hiber/service/UserServiceImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hiber/MainApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hiber/MainApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hiber/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hiber/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hiber/dao/UserDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hiber/dao/UserDaoImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hiber/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hiber/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hiber/service/UserServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hiber/service/UserServiceImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hiber/config/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hiber/config/AppConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hiber/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hiber/model/User.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,11 +111,25 @@
       <workItem from="1696946074957" duration="83000" />
       <workItem from="1696946160919" duration="1675000" />
       <workItem from="1697202652900" duration="2273000" />
-      <workItem from="1697222292824" duration="606000" />
+      <workItem from="1697222292824" duration="2063000" />
+      <workItem from="1697545144360" duration="997000" />
+      <workItem from="1697552915346" duration="3134000" />
+      <workItem from="1698054040826" duration="10936000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
