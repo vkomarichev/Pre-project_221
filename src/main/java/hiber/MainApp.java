@@ -16,15 +16,15 @@ public class MainApp {
 
       UserService userService = context.getBean(UserService.class);
 
-      Car car1 = new Car("BMW", 325);
+      Car car1 = new Car("BMW", 3);
       Car car2 = new Car("Mazda", 6);
       Car car3 = new Car("MB", 200);
+      Car car4 = new Car("Opel", 3);
 
       User user1 = new User("User1", "Lastname1", "user1@mail.ru", car1);
       User user2 = new User("User2", "Lastname2", "user2@mail.ru", car2);
-      User user3 = new User("User3", "Lastname3", "user3@mail.ru");
-      User user4 = new User("User4", "Lastname4", "user4@mail.ru", new Car("Opel", 150));
-
+      User user3 = new User("User3", "Lastname3", "user3@mail.ru", car3);
+      User user4 = new User("User4", "Lastname4", "user4@mail.ru", car4);
 
       userService.add(user1);
       userService.add(user2);
@@ -46,7 +46,23 @@ public class MainApp {
       }
 
 
+       /*
+      Пробуем вывести результат запроса
+       */
 
+      List<User> usersCar = userService.getUserByCar();
+      for (User user : usersCar) {
+         System.out.println("Id = "+user.getId());
+         System.out.println("First Name = "+user.getFirstName());
+         System.out.println("Last Name = "+user.getLastName());
+         System.out.println("Email = "+user.getEmail());
+         if(user.getCar() == null){
+            System.out.println("Машины нет");
+         }else {
+            System.out.println(user.getCar());
+         }
+         System.out.println("");
+      }
 
       context.close();
    }

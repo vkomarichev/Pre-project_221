@@ -13,4 +13,6 @@ public interface UserService {
 
     List<Car> listCars();
 
+    List<User> getUserByCar();
+
 }
