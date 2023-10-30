@@ -25,14 +25,14 @@ public class MainApp {
       Car car7 = new Car("MB", 200);
       Car car8 = new Car("BMW", 4);
 
-      User user1 = new User("User1", "Lastname1", "user1@mail.ru", car1);
-      User user2 = new User("User2", "Lastname2", "user2@mail.ru", car2);
-      User user3 = new User("User3", "Lastname3", "user3@mail.ru", car3);
-      User user4 = new User("User4", "Lastname4", "user4@mail.ru", car4);
-      User user5 = new User("User1", "Lastname1", "user1@mail.ru", car5);
-      User user6 = new User("User2", "Lastname2", "user2@mail.ru", car6);
-      User user7 = new User("User3", "Lastname3", "user3@mail.ru", car7);
-      User user8 = new User("User4", "Lastname4", "user4@mail.ru", car8);
+      User user1 = new User("User1", "Lastname1", "user1@mail.ru", car8);
+      User user2 = new User("User2", "Lastname2", "user2@mail.ru", car7);
+      User user3 = new User("User3", "Lastname3", "user3@mail.ru", car6);
+      User user4 = new User("User4", "Lastname4", "user4@mail.ru", car5);
+      User user5 = new User("User5", "Lastname5", "user5@mail.ru", car4);
+      User user6 = new User("User6", "Lastname6", "user6@mail.ru", car3);
+      User user7 = new User("User7", "Lastname7", "user7@mail.ru", car2);
+      User user8 = new User("User8", "Lastname8", "user8@mail.ru", car1);
 
       userService.add(user1);
       userService.add(user2);
@@ -50,26 +50,24 @@ public class MainApp {
          System.out.println("Last Name = "+user.getLastName());
          System.out.println("Email = "+user.getEmail());
          if(user.getCar() == null){
-            System.out.println("Машины нет");
+            System.out.println("Машины нет" + "\n");
          }else {
-            System.out.println(user.getCar());
+            System.out.println(user.getCar()+ "\n");
          }
-         System.out.println("");
       }
-
 
        /*
        Выводим результат запроса
        */
 
-      List<User> usersCar = userService.getUserByCar("BMW", 3);
+      List<User> usersCar = userService.getUserByCar("MB", 200);
       for (User user : usersCar) {
          System.out.println("Id = "+user.getId());
          System.out.println("First Name = "+user.getFirstName());
          System.out.println("Last Name = "+user.getLastName());
          System.out.println("Email = "+user.getEmail());
-         System.out.println(user.getCar());
-         System.out.println("");
+         System.out.println(user.getCar() + "\n");
+
       }
 
       context.close();
